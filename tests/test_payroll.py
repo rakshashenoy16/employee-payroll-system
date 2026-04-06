@@ -5,11 +5,16 @@ class TestPayroll(unittest.TestCase):
 
     def setUp(self):
         self.employees = [
-            {"employee_id": "1", "name": "Test", "monthly_salary": "30000"}
+            {
+                "employee_id": "E001",
+                "employee_name": "Test",
+                "department": "IT",
+                "monthly_salary": "30000"
+            }
         ]
 
         self.attendance = [
-            {"employee_id": "1", "date": "2026-03-01", "status": "Absent"}
+            {"employee_id": "E001", "date": "2026-03-01", "status": "A"}
         ]
 
     def test_salary_deduction(self):

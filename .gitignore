@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Output files (VERY IMPORTANT)
+output/
+*.csv
+
+# But keep input data if needed
+!data/employees.csv
+!data/attendance.csv
+
+# Config (optional - keep if not sensitive)
+# config/config.json
