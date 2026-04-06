@@ -1,0 +1,9 @@
+employee_id,name,present_days,absent_days,deduction,final_salary
+E001,Ravi,1,1,1666.67,48333.33
+E002,Anita,2,0,0.0,40000.0
+E003,Kiran,2,0,0.0,45000.0
+E004,Meena,0,2,3666.67,51333.33
+E005,Arjun,1,0,0.0,42000.0
+E006,Sneha,1,0,0.0,47000.0
+E007,Vikram,2,0,0.0,60000.0
+E008,Pooja,0,1,1266.67,36733.33
