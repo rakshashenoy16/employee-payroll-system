@@ -1,3 +1,0 @@
-error,record
-Invalid Date,"{'employee_id': 'E006', 'date': 'invalid_date', 'status': 'P'}"
-Invalid Employee,"{'employee_id': 'E009', 'date': '2024-09-01', 'status': 'P'}"

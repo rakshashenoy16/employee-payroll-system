@@ -1,5 +1,5 @@
 import csv
-
+#logs the information
 def log_error(errors, file_path):
     if not errors:
         return

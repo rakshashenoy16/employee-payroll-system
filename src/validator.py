@@ -7,7 +7,7 @@ def validate_records(employees, attendance):
     emp_ids = {e['employee_id'] for e in employees}
 
     for record in attendance:
-        # Check employee exists
+        # Checks if employee exists
         if record['employee_id'] not in emp_ids:
             errors.append({"error": "Invalid Employee", "record": str(record)})
             continue

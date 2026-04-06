@@ -1,5 +1,5 @@
 import csv
-
+#generates report
 def write_csv(data, file_path):
     if not data:
         return

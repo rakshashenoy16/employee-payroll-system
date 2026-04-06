@@ -9,7 +9,7 @@ def process_payroll(employees, attendance, config_path):
     summary = {}
     payroll = []
 
-    # Initialize employees
+    # Initialize employee
     for emp in employees:
         summary[emp['employee_id']] = {
             "name": emp['employee_name'],  # ✅ FIXED

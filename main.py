@@ -29,3 +29,33 @@ summary_list = [
 write_csv(summary_list, "output/attendance_summary.csv")
 
 print("Processing Complete!")
+from src.payslip import generate_payslips
+from src.email_service import send_individual_email
+
+
+SENDER_EMAIL = "rakshashenoy1610@gmail.com"
+APP_PASSWORD = "reob fnpz ujum srqd"
+
+#  Step 1: Generate individual payslips
+payslip_files = generate_payslips(payroll)
+
+#  Step 2: Send emails to each employee
+for emp in employees:
+    emp_id = emp['employee_id']
+    email = emp.get('email')  # safe access
+    name = emp['employee_name']
+
+    if not email:
+        print(f"⚠️ No email for {name}, skipping...")
+        continue
+
+    if emp_id in payslip_files:
+        send_individual_email(
+            SENDER_EMAIL,
+            APP_PASSWORD,
+            email,
+            payslip_files[emp_id],
+            name
+        )
+
+print(" Payslips sent successfully!")
